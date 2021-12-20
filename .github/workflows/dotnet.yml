@@ -5,6 +5,11 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    
+env:
+  AZURE_FUNCTIONAPP_NAME: ibc-function-app  # set this to your application's name
+  DOTNET5_VERSION: '5.0.x'              # set this to the dotnet version to use
+  DOTNET3_VERSION: '3.1.x'              # set this to the dotnet version to use
 
 jobs:
   build:
@@ -13,6 +18,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Setup Dot Net Core 3.1.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
