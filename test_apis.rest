@@ -1,0 +1,26 @@
+GET http://localhost:7071/api/content/who-are-they‽.md
+###
+GET http://localhost:7071/api/content/why-are-they‽.md
+###
+GET http://localhost:7071/api/content/the-albums.md
+###
+
+GET http://localhost:7071/api/table-content?id=who-are-they
+###
+GET http://localhost:7071/api/table-content?id=why-are-they
+###
+GET http://localhost:7071/api/table-content?id=the-albums
+###
+
+GET http://localhost:7071/api/songs
+###
+
+GET http://localhost:7071/api/media/audio/Comar_.mp3
+###
+
+
+GET http://localhost:7071/api/media/images/needswanger_inner.png
+###
+
+GET http://localhost:7071/api/albums
+###
